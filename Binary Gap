@@ -1,0 +1,27 @@
+def solution(N):
+    N =  "{0:b}".format(N)
+    
+    M = N
+    
+    if '1' in M:
+        M = M.split('1', 1)
+        if '1' in M[1]:
+            print(M[1])
+            pass;
+        else:
+            return 0
+    else:
+        pass
+        
+        
+    
+    N = N.split('1')
+    
+    x = max(N, key=len)
+    
+    x = len(x)
+
+            
+            
+    
+    return x
