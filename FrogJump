@@ -1,0 +1,8 @@
+import math
+
+def solution(X, Y, D):
+    
+    item = Y - X
+    anwser = item/D  
+    
+    return math.ceil(anwser)
