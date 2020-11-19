@@ -1,0 +1,8 @@
+def solution(A):
+    
+    for elem in A:
+        if A.count(elem) > 1:
+            A = [i for i in A if i != elem]
+    
+    
+    return A[0]
