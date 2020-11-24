@@ -12,8 +12,7 @@ def solution(N, A):
                 max_value = B[x-1]
 
         elif x > N:
-            for i, X in enumerate(B):
-                B[i]= max_value
+            B = [max_value] * N
             
     
     return B
