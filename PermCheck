@@ -1,0 +1,16 @@
+def solution(A):
+  
+    A.sort()
+    counter = 0
+    
+    while A:
+        if counter in A or counter is  0:
+            pass
+        elif counter is len(A) + 1:
+            return 1
+            
+        elif counter is not 0 and counter not in A:
+            return 0
+
+        
+        counter = counter + 1
