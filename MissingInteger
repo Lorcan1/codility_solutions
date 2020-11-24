@@ -1,0 +1,11 @@
+def solution(A):
+
+    A.sort()
+    counter = 0
+    
+    while A:
+        if counter in A or counter is 0:
+            pass
+        else:
+            return counter
+        counter = counter + 1
