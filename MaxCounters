@@ -1,0 +1,19 @@
+def solution(N, A):
+    
+    max_value = 0
+    
+    B = [0] * N
+    
+    for x in A:
+        
+        if x < N:
+            B[x-1] = B[x-1] + 1
+            if B[x-1] > max_value:
+                max_value = B[x-1]
+
+        elif x > N:
+            for i, X in enumerate(B):
+                B[i]= max_value
+            
+    
+    return B
